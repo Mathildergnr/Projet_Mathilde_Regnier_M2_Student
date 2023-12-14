@@ -1,12 +1,13 @@
 package fr.efrei.server.domain;
+
+
 import jakarta.persistence.*;
 
 @Entity
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
-    @SequenceGenerator(name="sequenceGenerator")
-
+    @SequenceGenerator(name = "sequenceGenerator", sequenceName = "seq")
     private Integer id;
     private String name;
     private Integer age;

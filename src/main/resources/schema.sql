@@ -1,5 +1,6 @@
-CREATE TABLE IF NOT EXISTS student(
-    id INT PRIMARY KEY,
-    name VARCHAR(100),
-    age INTEGER
+DROP TABLE IF EXISTS STUDENT;
+CREATE TABLE STUDENT (
+                         ID INT AUTO_INCREMENT PRIMARY KEY,
+                         NAME VARCHAR(255),
+                         AGE INT
 );
